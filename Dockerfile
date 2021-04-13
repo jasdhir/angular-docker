@@ -3,7 +3,7 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY package.json /usr/src/app
 #RUN npm cache clean
-RUN npm install @angular/compiler-cli
+RUN npm install @angular/cli
 RUN npm install
 COPY . /usr/src/app
 EXPOSE 4200
